@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FirstOrderPlain';
+    src: url('firstp.eot');
+    src: url('firstp.eot') format('embedded-opentype'),
+         url('firstp.woff') format('woff'),
+         url('firstp.ttf') format('truetype'),
+         url('firstp.svg#FirstOrderPlainPlain') format('svg');
+}

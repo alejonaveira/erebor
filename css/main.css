@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   
+html, body {
+	background: url('../img/erebor-mask2.png') no-repeat center center #0A0400;
+	background-size: 60% !important;
+	background-attachment: fixed;
+	color: #f0f0f0;
+	height: 100%;
+	font-family: "Oswald", Arial, Helvetica;
+	font-weight: 300;
+}
+#navbar { 
+	background: rgba(0,0,0,0.4); 
+	height: 100px; 
+	padding-top: 25px;
+	top: -100px; 
+}
+#navbar {
+	transition: top 0.5s linear 0s;
+}
+
+section { 
+	position: relative; 
+	padding-top: 100px;
+	margin: 0;
+}
+footer {
+	font-family: Helvetica;
+	font-size: 0.8em;
+}
+
+.firstorder {
+	font-family: "FirstOrderPlain", Arial, Helvetica;
+}
+
+.hobbit {
+	font-family: "FirstOrderRegular", Arial, Helvetica;
+}
+
+
+
+
+
+/*** Carousel ***/
+#featured-brews { padding: 0; }
+.estilo {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.rauch-stout {
+	background-image: url('http://wac.450f.edgecastcdn.net/80450F/popcrush1057.com/files/2013/02/Glass-of-Stout-Beer-and-Hops-Credit-iStockphoto-92025136-630x630.jpg');
+}
+.irish-red {
+	background-image: url('http://4.bp.blogspot.com/-lTeYBLSyh4w/T1KRZUvK4bI/AAAAAAAABpQ/9q9fw7WbDO4/s1600/irish_red.jpg');
+	background-position: left top;
+}
+.golden-ale {
+	background-image: url('http://static.squarespace.com/static/5007b635e4b002842b3371c9/t/51cb513ee4b0814177b7d56b/1372279103137/ILoveGold.JPG');
+}
+.estilo h1 { font-family: "FirstOrderRegular"; font-size: 4em; }
+
+
+
+
+
+.full-height {
+	height:100%;
+    min-height:600px;
+}
+.bg-hop {
+	background: url('../img/dsc00491.jpg') no-repeat;
+}
+.bg-lanin {
+	background: url('../img/laninatardecer_big.jpg') no-repeat;
+}
+.bg-map-erebor {
+	background: url('../img/map_erebor.jpg') no-repeat;
+}
+.bg-barley {
+	background: url('../img/12175955.jpg') no-repeat;	
+}
+.bg-white { 
+	background: #fff;
+}
+
+.bg-mask { 
+	background: url('../img/erebor-mask2.png') no-repeat center center;
+	background-size: 60% !important;
+}
+
+.bg { 
+	height: 600px; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+.bg-translucid {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.jumbotron { background: rgba(0,0,0,0); margin-bottom: 0;  }
+@media(max-height: 600px), screen and (orientation: landscape) {		/* landscape */
+	.bg, .fullheight { min-height: 400px; height: inherit; }
+	/* #navbar { height: auto; padding-top: 0px; } */
+}
+@media(min-height: 600px){
+	.bg, .fullheight { min-height: 720px; height: inherit; }
+}
+@media(min-height: 700px){
+	.bg, .fullheight { min-height: 800px; height: inherit; }
+}
+
+
+.call-to-action:hover {
+	box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.call-to-action {
+	background-color: rgba(0,0,0,0.3);
+	border: 10px solid;
+	border-color: #fff;
+	padding: 25px;
+	margin: 20px auto;
+	color: #fff;
+	display: inline-block;
+}
+
+
+.btn-slide-down {
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	
+	margin: 0;
+	margin-left: -30px;
+	border-radius: 100%;
+	
+	padding: 0;
+	width: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+	
+	text-align: center;
+	font-size: 1.8em;
+	
+	background: #ccc;
+	color: #666;
+}
+
+.btn-trans {
+    opacity: 0.4;
+    text-decoration: none;
+    transition: opacity 0.4s linear 0s;
+}
+
+.btn-trans:hover,
+.btn-trans:focus,
+.btn-trans:active,
+.btn-trans:visited
+	{ color: #666; opacity: 0.7; }
+	
+
+.isometric { 
+	transform: rotateZ(45deg); 
+	padding: 10px;
+	margin: 0;
+	width: 60px;
+	line-height: 60px;
+}
+.isometric i { transform: rotateZ(-45deg); }
+	
