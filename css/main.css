@@ -13,7 +13,7 @@ html, body {
 	font-weight: 300;
 }
 #navbar { 
-	background: rgba(0,0,0,0.4); 
+	background: rgba(0,0,0,0.65); 
 	height: 100px; 
 	padding-top: 25px;
 	top: -100px; 
@@ -116,7 +116,9 @@ footer {
 @media(min-height: 700px){
 	.bg, .fullheight { min-height: 800px; height: inherit; }
 }
-
+@media(min-height: 900px){
+	.bg, .fullheight { min-height: 980px; height: inherit; }
+}
 
 .call-to-action:hover {
 	box-shadow: 0 0 20px rgba(255,255,255,0.5);
