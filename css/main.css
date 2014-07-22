@@ -27,6 +27,7 @@ section {
 	padding-top: 100px;
 	margin: 0;
 }
+
 footer {
 	font-family: Helvetica;
 	font-size: 0.8em;
@@ -39,7 +40,6 @@ footer {
 .hobbit {
 	font-family: "FirstOrderRegular", Arial, Helvetica;
 }
-
 
 
 
@@ -169,12 +169,27 @@ footer {
 	{ color: #666; opacity: 0.7; }
 	
 
+.btn-iso {
+	margin-left: -20px;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
 .isometric { 
 	transform: rotateZ(45deg); 
-	padding: 10px;
+	-webkit-transform: rotateZ(45deg); 
+	padding: 0px;
 	margin: 0;
-	width: 60px;
-	line-height: 60px;
+	width: 40px;
+	line-height: 40px;
+	height: 40px;
+	font-size: 1.4em;
+	vertical-align: middle;
+	border-radius: 0%;
+	background: #ccc;
 }
-.isometric i { transform: rotateZ(-45deg); }
+.isometric i { 
+	transform: rotateZ(-45deg);
+	-webkit-transform: rotateZ(-45deg);
+}
 	
