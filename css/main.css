@@ -193,6 +193,22 @@ footer {
 }
 
 
-.widget-social {
-	font-size: 3em;
-}	
+.btn-social:hover {
+	background: rgba(0,0,0,0);
+	color: #BA5A1F;
+    transition: background-color 0.4s ease-out 0s;
+}
+
+.btn-social {
+	border: 10px solid #BA5A1F;
+	background-color: #BA5A1F;
+	border-radius: 100%;
+	color: #000;
+	display: inline-block;
+	font-size: 1.7em;
+	vertical-align: middle;
+}
+.btn-social > i {
+	width: 30px;
+	height: 30px;
+}
