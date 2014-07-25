@@ -84,7 +84,7 @@
       </section>
 	  
 	  
-	  <section class="bg bg-hop vcenter text-center" data-stellar-background-ratio="0.2">
+	  <section class="bg bg-map-erebor vcenter text-center separador" data-stellar-background-ratio="0.2">
 	    
 		<div class="call-to-action firstorder text-center">Historia</div>
 		
@@ -140,9 +140,13 @@
 	  </section>
 	  
 	  
-	  <section class="bg bg-map-erebor vcenter text-center">
+	  <section class="bg bg-map-erebor vcenter text-center separador" data-stellar-background-ratio="0.2">
 		<div class="call-to-action firstorder text-center">Estilos</div>
-		<a class="btn-slide-down btn-trans btn-scroll" href="#erebor-estilos" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
+		
+		<a class="btn-slide-down btn-scroll btn-trans" href="#erebor-estilos" role="button">
+		  <div class="isometric"><i class="glyphicon glyphicon-chevron-down"></i></div>
+		</a>
+		
 	  </section>
 	  
 	  
@@ -225,26 +229,59 @@
 	  </section>
 
 	  
-	  <section id="contacto" class="bg container vcenter text-center">
+	  <section id="contacto" class="bg container vcenter text-center" style="padding-top: 15%">
 	    <div class="row">
-		  <div class="col-md-4">
-			<ul class="list-inline">
-			  <li><a href="mailto:cervezaerebor@gmail.com"><i class="fa fa-envelope"></i></a></li>
+		  
+		  <div class="col-md-4 text-justify">
+		    <p>Tomamos pedidos para producciones personalizadas, con 45 días de anticipación. Si estás organizando una fiesta o reunión, te podemos ofrecer barriles 
+			de 20 litros, para servir cerveza tirada! Tenemos también disponibles por pedido cajones de 12 botellas de litro, o 20 botellas de 660cc. </p>
+			
+			<p>Para bares y pubs cerveceros ofrecemos alternativas de comercialización por concesión, y nos podés consultar si tenés más ideas.</p>
+			
+		  </div>
+		  
+		  <div class="col-md-4 text-center">
+			<ul class="list-inline widget-social">
 			  <li><a href="faceboom.com/cervezaerebor"><i class="fa fa-facebook"></i></a></li>
 			  <li><a href="twitter.com/cervezaerebor"><i class="fa fa-twitter"></i></a></li>
-			  <li><a href="twitter.com/cervezaerebor"><i class="fa fa-instagram"></i></a></li>
+			  <li><a href="instagram.com/cervezaerebor"><i class="fa fa-instagram"></i></a></li>
+			  <li><a href="google.com/cervezaerebor"><i class="fa fa-google-plus"></i></a></li>
 			</ul>
 		  </div>
 		  
-		  <div class="col-md-4 text-left" style="border-right: 1px solid #666; border-left: 1px solid #fff;">
-		    <p>Para producciones personalizadas, se deben contactar con 30 días de anticipación.</p>
-			<p>Tenemos disponibles barriles de 20 litros, para servir cerveza tirada. Excelente para fiestas y reuniones!</p>
-			
-		  </div>
-		  <div class="col-md-4 ">
-		  
+		  <div class="col-md-4 text-left">
+		    <form role="form" class="form-horizontal">
+			  <div class="form-group">
+			    <label for="nombre" class="firstorder">Nombre</label>
+				<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresá tu nombre" />
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="email">Email</label>
+				<input type="email" class="form-control" name="email" id="email" placeholder="Ingresá tu email" />
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="tel">Tel/Cel</label>
+				<input type="text" class="form-control" name="tel" id="tel" placeholder="Ingresá tu teléfono" />
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="consulta">Consulta</label>
+				<textarea class="form-control" rows="3"></textarea>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+			  
+			</form>
 		  </div>
 		</div>
+		
+		
+		<a class="btn-slide-down btn-scroll btn-trans" href="#home" role="button">
+		  <div class="isometric"><i class="glyphicon glyphicon-chevron-up"></i></div>
+		</a>
+		
 	  </section>
 
       <footer>

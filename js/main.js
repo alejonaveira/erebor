@@ -19,4 +19,5 @@ jQuery(document).ready(function($) {
 		if($(document).scrollTop() < $(window).height() *0.7) $('#navbar').css('top', '-100px');
 		else $('#navbar').css('top', '0');
 	});
+	
 });
