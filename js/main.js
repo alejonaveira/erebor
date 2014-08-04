@@ -20,10 +20,17 @@ jQuery(document).ready(function($) {
 		else $('#navbar').css('top', '0');
 	});
 	
+	$('#contact-form').submit(function(event){
+		$.post('srv.php',$('#contact-form').serialize(),function(data){
+			if(data.result == 1){
+				alert("Tu mensaje fue enviado con éxito!");
+			}else{
+				alert("Oops! Ocurrió un error al enviar");
+			}
+
+		});
+		event.preventDefault();
+	});
+	
 });
 
-
-
-$('#contact-form').submit(function(){
-
-});

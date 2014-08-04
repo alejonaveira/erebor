@@ -1,7 +1,5 @@
 <?php
 
-print_r($_POST);
-
 try {
 	$dbh = new PDO('mysql:host=192.168.2.189;port=3306;dbname=erebor', 'erebor', '33tres', array( PDO::ATTR_PERSISTENT => false));
 
@@ -18,11 +16,11 @@ try {
 		'referer' => $_POST['nombre'],	
 	));
 
-	echo "<BR><B>ok</B>";
+	$result = array("result" => 1);
 
 } catch (PDOException $e) {
-	print "Error!: " . $e->getMessage() . "<br/>";
-	die();
+	$result = array("result" => 0, "error" => $e->getMessage());
 }
 
+die(json_encode($result));
 ?>
