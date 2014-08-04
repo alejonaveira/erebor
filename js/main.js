@@ -19,7 +19,11 @@ jQuery(document).ready(function($) {
 		if($(document).scrollTop() < $(window).height() *0.7) $('#navbar').css('top', '-100px');
 		else $('#navbar').css('top', '0');
 	});
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> origin/master
 	$('#contact-form').submit(function(event){
 		$.post('srv.php',$('#contact-form').serialize(),function(data){
 			if(data.result == 1){

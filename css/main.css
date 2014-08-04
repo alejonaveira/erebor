@@ -13,6 +13,15 @@ html, body {
 	font-weight: 300;
 	font-size: 1em;
 }
+#navbar { 
+	background: rgba(0,0,0,0.65); 
+	height: 100px; 
+	padding-top: 25px;
+	top: -100px; 
+}
+#navbar {
+	transition: top 0.5s linear 0s;
+}
 
 section { 
 	position: relative; 
@@ -22,95 +31,85 @@ section {
 
 footer {
 	font-family: Helvetica;
-	font-size: 0.6em;
+	font-size: 0.8em;
 }
 
-/* bootstrap customization */
-.btn { border-radius: 0px; }
-#navbar { 
-	background: rgba(0,0,0,0.65); 
-	min-height: 100px; 
-	padding-top: 25px;
-	top: -100px; 
+.firstorder {
+	font-family: "FirstOrderPlain", Arial, Helvetica;
 }
-#navbar { 	transition: top 0.5s linear 0s; }
-.jumbotron { background: rgba(0,0,0,0); margin-bottom: 0;  }
 
-
-/* Custom font types */
-.firstorder {	font-family: "FirstOrderPlain", Arial, Helvetica; }
-.hobbit { 	font-family: "FirstOrderRegular", Arial, Helvetica; }
+.hobbit {
+	font-family: "FirstOrderRegular", Arial, Helvetica;
+}
 
 
 
 
 /*** Carousel ***/
-#erebor-estilos { padding: 0; }
-#featured-brews { 
-	padding: 0; 
-	height: 100%
-}
-
+#featured-brews { padding: 0; }
 .estilo {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center top;
-	font-size: 1.5em;
 }
 .rauch-stout {
-	background-image: url('../img/stout.jpg');
+	background-image: url('http://wac.450f.edgecastcdn.net/80450F/popcrush1057.com/files/2013/02/Glass-of-Stout-Beer-and-Hops-Credit-iStockphoto-92025136-630x630.jpg');
 }
 .irish-red {
-	background-image: url('../img/irish_red.jpg');
+	background-image: url('http://4.bp.blogspot.com/-lTeYBLSyh4w/T1KRZUvK4bI/AAAAAAAABpQ/9q9fw7WbDO4/s1600/irish_red.jpg');
 	background-position: left top;
-	color: #5B0505;
-}
-.ipa {
-	background-image: url('../img/ipa.jpg');
-	background-position: left top;
-	color: #fff;
 }
 .golden-ale {
-	background-image: url('../img/golden.jpg');
-	background-position: center;
-	color: #260E03;
+	background-image: url('http://static.squarespace.com/static/5007b635e4b002842b3371c9/t/51cb513ee4b0814177b7d56b/1372279103137/ILoveGold.JPG');
 }
-.estilo h1 { font-family: "FirstOrderRegular"; font-size: 3em; }
+.estilo h1 { font-family: "FirstOrderRegular"; font-size: 4em; }
 
 
 
 
-/* backgrounds */
+
 .full-height {
 	height:100%;
     min-height:600px;
 }
+.bg-hop {
+	background: url('../img/dsc00491.jpg') no-repeat;
+}
+.bg-lanin {
+	background: url('../img/laninatardecer_big.jpg') no-repeat;
+}
+.bg-map-erebor {
+	background: url('../img/map_erebor.jpg') no-repeat;
+}
+.bg-barley {
+	background: url('../img/12175955.jpg') no-repeat;	
+}
+.bg-white { 
+	background: #fff;
+}
+
+.bg-mask { 
+	background: url('../img/erebor-mask2.png') no-repeat center center;
+	background-size: 60% !important;
+}
+
 .bg { 
 	height: 600px; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bg-hop {	background: url('../img/dsc00491.jpg') no-repeat;}
-.bg-white { background: #fff; }
-.bg-lanin {	background: url('../img/laninatardecer_big.jpg') no-repeat; }
-.bg-map-erebor {	background: url('../img/map_erebor.jpg') no-repeat;}
-.bg-translucid {	background-color: rgba(0,0,0,0.2); }
-.bg-mask { 
-	background: url('../img/erebor-mask2.png') no-repeat center center;
-	background-size: 60% !important;
+
+
+
+.bg-translucid {
+	background-color: rgba(0,0,0,0.2);
 }
 
-
-/* Responsive behaviors */
-@media screen and (orientation: portrait) { 	/* phone portrait */
-	.estilo {	background-size: auto 100%;}
-	.estilo h1{	font-size: 2em; }
-} 
-/*@media screen and (orientation: landscape) {		/* landscape */
-@media(max-height: 600px){ 
+.jumbotron { background: rgba(0,0,0,0); margin-bottom: 0;  }
+@media(max-height: 600px), screen and (orientation: landscape) {		/* landscape */
 	.bg, .fullheight { min-height: 400px; height: inherit; }
-	#navbar { min-height: 0px; padding-top: 0px; }
+	/* #navbar { height: auto; padding-top: 0px; } */
 }
 @media(min-height: 600px){
 	.bg, .fullheight { min-height: 720px; height: inherit; }
@@ -122,22 +121,12 @@ footer {
 	.bg, .fullheight { min-height: 980px; height: inherit; }
 }
 
-
-
-
-
 .call-to-action:hover {
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
-	-moz-box-shadow:    0px 0px 20px 0px rgba(255, 255, 255, 0.5);
-	box-shadow:         0px 0px 20px 0px rgba(255, 255, 255, 0.5);
-	background-color: rgba(0,0,0,0.5);
-	text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
 .call-to-action {
-	-webkit-box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
-	-moz-box-shadow:    inset 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
-	box-shadow:         inset 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
+	background-color: rgba(0,0,0,0.3);
 	border: 10px solid;
 	border-color: #fff;
 	padding: 25px;
@@ -213,14 +202,13 @@ footer {
 .btn-social {
 	border: 10px solid #BA5A1F;
 	background-color: #BA5A1F;
-	border-radius: 50%;
+	border-radius: 100%;
 	color: #000;
 	display: inline-block;
-	font-size: 1.4em;
+	font-size: 1.7em;
 	vertical-align: middle;
-	text-align: center;
-	padding: 0px;
-	min-width: 55px;
-	min-height: 55px;
-	margin-bottom: 10px;
+}
+.btn-social > i {
+	width: 30px;
+	height: 30px;
 }
